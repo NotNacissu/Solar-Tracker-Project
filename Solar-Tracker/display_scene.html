@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page refreshed</title>
+
+</head>
+
+<body>
+
+    <h1>Tracking?</h1>
+    <img src="m1.bmp" alt="hm.." id="myImage" width="700" height="700">
+
+    <script type="text/javascript">
+        setInterval(function () {
+            var myImageElement = document.getElementById('myImage');
+            myImageElement.src = 'm1.bmp?rand=' + Math.random();
+        }, 1500);
+    </script>
+</body>
+
+</html>
